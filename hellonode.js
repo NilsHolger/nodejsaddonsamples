@@ -20,9 +20,9 @@ function cycle(event){
 };
 
 function compete(a, b){
-        //C++ wins on multiple trials
-        console.log('FASTEST: ' + this.filter('fastest').map('name'));  //C++ elapsed 5.867
-        console.log('SLOWEST: ' + this.filter('slowest').map('name')); //JavaScript elapsed 6.072
+        //C++ wins on same implementation again on multiple trials
+        console.log('FASTEST: ' + this.filter('fastest').map('name'));  //C++ elapsed 5.96
+        console.log('SLOWEST: ' + this.filter('slowest').map('name')); //JavaScript elapsed 6.059
 }
 
 
