@@ -19,9 +19,11 @@ const addon = require('./build/Release/addon');
 // console.log(obj1.timesTwo()); //800
 // console.log(obj1.timesTwo()); //1600
 
-var obj1 = addon.createObject(8);
-var obj2 = addon.createObject(8);
-var result = addon.multiply(obj1, obj2); //64
-console.log(result);
+// var obj1 = addon.createObject(8);
+// var obj2 = addon.createObject(8);
+// var result = addon.multiply(obj1, obj2); //64
+// console.log(result);
+
+console.log(addon.SuperPowers(2,8)); //2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 => 256
 
 

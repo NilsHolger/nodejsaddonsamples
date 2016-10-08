@@ -39,7 +39,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\addon6.cpp">
+    <ClCompile Include="..\addon7.cpp">
       <Filter>..</Filter>
     </ClCompile>
     <ClCompile Include="..\myobject.cpp">
