@@ -9,7 +9,14 @@ const addon = require('./build/Release/addon');
 //var fn = addon(); 
 //console.log(fn());  //Linus you were right.Open Source has won.God bless you.
 
-var obj = new addon.MyObject(100);
-console.log(obj.timesTwo()); //200
-console.log(obj.timesTwo()); //400
-console.log(obj.timesTwo()); //800
+// var obj = new addon.MyObject(100);
+// console.log(obj.timesTwo()); //200
+// console.log(obj.timesTwo()); //400
+// console.log(obj.timesTwo()); //800
+
+var obj1 = addon.createObject(200);
+console.log(obj1.timesTwo()); //400
+console.log(obj1.timesTwo()); //800
+console.log(obj1.timesTwo()); //1600
+
+
