@@ -10,7 +10,7 @@ V8 is the C++ library that Node currently uses to provide the JavaScript impleme
 calling functions. V8's API is documented mostly in the v8 header file deps/v8/include/v8.h in the Node.js source tree, also availabe
 online here https://v8docs.nodesource.com/.
 libuv is the C library that implements the Node.js event loop, its worker threads and all asynchronous behaviors of the platform. It also
-serves as a cross platfrom abstraction library, giving easy, POSIX-like access across all major operating systems to many common system
+serves as a cross platform abstraction library, giving easy, POSIX-like access across all major operating systems to many common system
 tasks, such as interacting with file systems, sockets, timers and system events. libuv also provides a pthreads like threading abstraction
 that can be used to power more sophisticated asynchronous addons that need to move beyond the standard event loop. libuv lives here
 http://libuv.org/.
