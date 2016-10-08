@@ -14,9 +14,14 @@ const addon = require('./build/Release/addon');
 // console.log(obj.timesTwo()); //400
 // console.log(obj.timesTwo()); //800
 
-var obj1 = addon.createObject(200);
-console.log(obj1.timesTwo()); //400
-console.log(obj1.timesTwo()); //800
-console.log(obj1.timesTwo()); //1600
+// var obj1 = addon.createObject(200);
+// console.log(obj1.timesTwo()); //400
+// console.log(obj1.timesTwo()); //800
+// console.log(obj1.timesTwo()); //1600
+
+var obj1 = addon.createObject(8);
+var obj2 = addon.createObject(8);
+var result = addon.multiply(obj1, obj2); //64
+console.log(result);
 
 
