@@ -85,6 +85,19 @@ void PassObjectFactory(const FunctionCallbackInfo<Value>& args){
     args.GetReturnValue().Set(obj);
 }
 
+void IncrementArray(const FunctionCallbackInfo<Value>& args){
+        Isolate * isolate = args.GetIsolate();
+        Local<Array> array = Local<Array>::Cast(args[0]);
+
+        for (unsigned int i = 0; i < array->Length(); i++ ){
+            if (array->Has(i)){
+            double value = array->Get(i)->NumberValue();
+            array->Set(i, Number::New(isolate, value + 100));
+            }
+        }
+        args.GetReturnValue().Set(array);
+}
+
 
 void init(Local<Object> exports){
     NODE_SET_METHOD(exports, "passnumber", PassNumber);
@@ -93,6 +106,7 @@ void init(Local<Object> exports){
     NODE_SET_METHOD(exports, "passstring", PassString);
     NODE_SET_METHOD(exports, "passobject", PassObject);
     NODE_SET_METHOD(exports, "passobjectfactory", PassObjectFactory);
+    NODE_SET_METHOD(exports, "incrementarray", IncrementArray);
 
 }
 

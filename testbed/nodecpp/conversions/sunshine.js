@@ -26,11 +26,14 @@ const addon = require('./build/Release/addon');
 
 //var obj = { x : 100, y : "string", z : false };
 //console.log(addon.passobject(obj)); // x is mutated to 200
-var obj = { x : 10, y : 10};
-console.log(addon.passobjectfactory(obj).sum); //20
-console.log(addon.passobjectfactory(obj).product); //100
-console.log(addon.passobjectfactory(obj).divide); //1
-console.log(addon.passobjectfactory(obj).subtract); //0
+//var obj = { x : 10, y : 10};
+//console.log(addon.passobjectfactory(obj).sum); //20
+//console.log(addon.passobjectfactory(obj).product); //100
+//console.log(addon.passobjectfactory(obj).divide); //1
+//console.log(addon.passobjectfactory(obj).subtract); //0
+
+var arr = [1,2,3];
+console.log(addon.incrementarray(arr)); //101, 102, 103
 
 
 
