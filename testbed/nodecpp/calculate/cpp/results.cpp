@@ -16,14 +16,18 @@ double avg_sales(location &loc){
 
 country_result calc_country_stats(location &loc){
         country_result result;
-        double ss = 0;
+        float ss = 0;
         double total = 0;
         result.n = loc.samples.size();
 
-        for (const auto &sample: loc.samples){
-            total += sample.results;
+        // for (const auto &sample : loc.samples){
+        //     total += sample.results;
+        // }
+        for (int i = 0; i < result.n - 1; i++){
+                total += loc.samples[i].results;
         }
-        result.mean = total / loc.samples.size();
+        //total = loc.samples[0].results + loc.samples[1].results + loc.samples[2].results;// + loc.samples[3].results;
+        result.mean = loc.samples[3].results; //total / loc.samples.size();
 
         for (const auto &sample : loc.samples){
             ss += pow(sample.results - result.mean, 2);

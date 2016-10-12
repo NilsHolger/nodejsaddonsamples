@@ -5,14 +5,14 @@ using namespace std;
 class sample {
     public:
     sample(){
-        month = ""; results = 0;
+        month = ""; results = 0.0;
     }
-    sample(string m, double r){
+    sample(string m, float r){
         month = m;
         results = r;
     }
     string month;
-    double results;
+    float results;
 };
 
 //for median calculation (sorting)
