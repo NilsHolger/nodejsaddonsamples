@@ -34,7 +34,9 @@ void Execute() {
 }
 // Executes in event loop
 void HandleOKCallback () {
+Nan::HandleScope scope;
 Local<Value> lv[] = {Nan::New<v8::String>(response).ToLocalChecked()};
+
 callback->Call(1, lv);
 }
 private:
