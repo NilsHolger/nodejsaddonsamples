@@ -1,0 +1,24 @@
+{
+  "name": "objectwrapnan",
+  "version": "0.0.1",
+  "description": "node v8 nan objectwrap js c++",
+  "main": "sunshine.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node-gyp rebuild"
+  },
+  "keywords": [
+    "node",
+    "v8",
+    "nan",
+    "objectwrap",
+    "js",
+    "c++"
+  ],
+  "author": "Nils-Holger Nägele",
+  "license": "MIT",
+  "gypfile": true,
+  "dependencies": {
+    "nan": "^2.4.0"
+  }
+}
