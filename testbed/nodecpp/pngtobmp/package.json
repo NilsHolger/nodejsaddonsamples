@@ -1,0 +1,26 @@
+{
+  "name": "pngtobmp",
+  "version": "0.0.1",
+  "description": "node nan v8 addon png to bmp",
+  "main": "sunshine.js",
+  "scripts": {
+    "start" : "node sunshine.js libuv.png",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node-gyp rebuild"
+  },
+  "keywords": [
+    "node",
+    "nan",
+    "v8",
+    "addon",
+    "png",
+    "to",
+    "bmp"
+  ],
+  "author": "Nils-Holger Nägele",
+  "license": "MIT",
+  "gypfile": true,
+  "dependencies": {
+    "nan": "^2.4.0"
+  }
+}
